@@ -5,13 +5,9 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Architecture & Workflow](#architecture--workflow)
-- [Workflow](#workflow)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Interface](#interface)
 
 ## Overview
 
@@ -47,6 +43,57 @@
    - Users can upload PDFs containing extensive information (e.g., medical textbooks) or concise data (e.g., prescriptions).
    - **PyTesseract** extracts text from uploaded PDFs, which is then processed and integrated into the conversation context.
 
+## Installation
 
+### Prerequisites
+
+- **Python 3.8+**
+- **pip** package manager
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Nuna7/HealthCareLlama3.1.git
+cd HealthCareLlama3.1
+```
+### Create a Virtual Environment
+- It's recommended to use a virtual environment to manage dependencies.
+```bash
+python -m venv env
+source env/bin/activate
+```
+
+### Install Dependencies
+```bash
+pip install streamlit langchain transformers tavily-python pdfplumber chromadb pysqlite3-binary langchain_community langgraph bitsandbytes pytesseract pdf2image Pillow langchain-huggingface python-dotenv
+apt-get install poppler-utils -y
+```
+
+## Configuration
+**Setting Up Environment Variables:**
+To securely manage API keys and other sensitive information, use an environment file.
+
+1. **Create a .env File:**
+      In the root directory of the project, create a file named .env
+      ```bash
+      touch .env
+      ```
+2. **Add Your API Keys to .env:**
+     ```env
+     HF_TOKEN=YOUR_HF_TOKEN
+     TAVILY_API_KEY=YOUR_TAVIY_TOKEN
+     ```
+
+## Usage
+**Run the Application:**
+   ```bash
+   streamlit run main.py
+   ```
+
+## Interface
+1. **You can interact with AI agent and upload short information like prescription.**
+![User Interaction](path/to/your/image1.png)
+2. **You can also upload long information like healthcare books to enhance AI knowledge.**
+![Enhances AI knowledge](path/to/your/image1.png)
 
 
