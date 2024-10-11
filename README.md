@@ -97,6 +97,6 @@ To securely manage API keys and other sensitive information, use an environment 
 
 2. ### You can also upload long information like healthcare books to enhance AI knowledge.
    
-![Enhances AI knowledge](./image1.png)
+![Enhances AI knowledge](./image2.png)
 
 
