@@ -92,8 +92,8 @@ To securely manage API keys and other sensitive information, use an environment 
 
 ## Interface
 1. ### You can interact with AI agent and upload short information like prescription.
-   
-![User Interaction](./image1.png)
+
+![User Interaction](./image3.png)
 
 2. ### You can also upload long information like healthcare books to enhance AI knowledge.
    
